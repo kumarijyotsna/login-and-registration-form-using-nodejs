@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<script>
+function si(){
+   document.getElementById("sign").innerHTML= "You are signed in!!!!";
+}
+</script>
+
+<h1>Register</h1>
+<p>Enter your username and password</p>
+<p id="sign">sign up</p> 
+<table>
+<form action="http://localhost:3000/signup" method="post">
+<tr>
+             
+<td>Username</td>
+<td><input type="text" name="username"/></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name="pwd"/></td>
+</tr>
+<tr>
+<td>Date of birth:</td>
+<td>
+<input type="date" name="dob"/></td>
+</td>
+</tr>
+<tr>
+<td align="left" colspan="2"><input type="submit" value="Register"  onclick="si()"/></td>
+<td align="right" colspan="2"><a id="loginlink" href="/login">login</a></td>
+</tr>
+</form>
+</table>
+<script>
+window.alert('signed in');
+</script>
+</center>
+</body>
+</html>
